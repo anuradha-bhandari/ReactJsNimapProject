@@ -1,0 +1,167 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.navbar{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px 70px;
+}
+
+.navbar li{
+  list-style: none;
+}
+.navbar li .link{
+  color: white;
+
+}
+
+.navbar li .link:hover{
+  color: rgb(16, 3, 67);
+  font-weight:bold;
+
+}
+.navbar-menu{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width:800px) {
+  
+    .navbar-menu{
+      display: none;
+      width: 100%;
+    }
+    .menu-open{
+      display: block;
+    }
+    .navbar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .navbar-list li {
+    
+    text-align: center;
+  }
+}
+
+.allMovie{
+width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+.blockHeight{
+  min-height: 250px;
+}
+.blockHeight img{
+  min-height: 250px;
+  width: 100%;
+}
+
+.showBlock{
+  width: 22%;
+  height: 375px;  
+}
+
+/* Detail page */
+
+
+.movieContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.movieDetail{
+    max-width: 75%;
+}
+.movieImg{
+  width: 25%;
+}
+.castDetail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cast{
+  width:22%;
+  min-height: 200px;
+  margin-left: 25px;
+  margin-bottom: 30px;
+  
+}
+.cast img{
+  width:100%;
+  max-height: 300px;
+}
+
+/* Media query */
+
+@media screen and (max-width:1024px) {
+
+  .showBlock{
+    width: 33%;
+  }
+} 
+@media screen and (max-width:815px) {
+
+  .showBlock{
+    width: 45%;
+  }
+
+} 
+@media screen and (max-width:560px) {
+
+  .showBlock{
+    width:95%;
+  }
+} 
+
+
+@media screen and (max-width:970px) {
+  .cast{
+    width:30%;
+    margin-left: 15px;
+  }
+} 
+
+@media screen and (max-width:830px) {
+  .cast{
+    width:45%;
+    margin-left: 15px;
+  }
+  .movieContainer{
+  flex-direction:column;
+
+}
+  .movieDetail{
+    max-width: 100%;
+    
+}
+.movieImg{
+  width:50%;
+  height:100%;
+  margin: auto;
+  padding:20px;
+}
+} 
+@media screen and (max-width:590px) {
+  .cast{
+    width:60%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+} 
