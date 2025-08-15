@@ -15,10 +15,7 @@ let AllSearchResult=async()=>{
     let result=await searchResult(search);
     setsearch(result);
 }
-let detailsPage=(data)=>{
 
-           navigate("/movieDetail",{state:{detail:data}})
-    }
 
 useEffect(()=>{
         AllSearchResult();
@@ -32,7 +29,7 @@ useEffect(()=>{
                     <h1 className="text-light  mt-5" style={{marginLeft:"480px"}}>Search Data Not Found</h1>
                 ):(
                   show.map((item)=>(
-                    <div className=' shadow mx-0 bg-dark showBlock mb-5 p-0' onClick={(e)=>{detailsPage(item)}}>
+                    <div className=' shadow mx-0 bg-dark showBlock mb-5 p-0'>
                         <div className='container-fluid w-100 p-0  mt-2 blockHeight'>
                             <img src={`https://image.tmdb.org/t/p/w500/${item.backdrop_path}`} alt="" />
                         </div>

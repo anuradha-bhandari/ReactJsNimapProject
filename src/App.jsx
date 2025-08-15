@@ -8,8 +8,9 @@ import TopRating from './component/toprated';
 import Navbar from './component/navbar';
 
 import Popular from './component/popularmovies';
-import SearchMovie from './component/searchpage';;
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import SearchMovie from './component/searchpage';
+
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 function App() {
 
         return<>
