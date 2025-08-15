@@ -17,7 +17,7 @@ let Navbar=()=>{
           <div className='container-fluid navbar d-flex bg-secondary '>
                 <h3 className=' mt-2 p-0'><Link to="/" className='link text-white'>MovieDb</Link></h3>
 
-                <button className='btn btn-outline-danger  d-md-none' onClick={()=>setIsOpen(!isOpen)}> ☰</button>
+                <button className='btn btn-outline-primary  d-md-none' onClick={()=>setIsOpen(!isOpen)}> 🔽</button>
                <div className={`${isOpen?'menu-open':'menu-closed'} navbar-menu`}>
                  <ul className='navbar-list d-flex p-1 align-middle'>
                     <li className='mx-2 mt-2 '><Link to="/" className='link'>POPULAR</Link></li>
